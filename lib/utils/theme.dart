@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final offgroundTheme = ThemeData.light().copyWith(
-  appBarTheme: AppBarTheme(
+  appBarTheme: const AppBarTheme(
     color: Colors.white,
     textTheme: TextTheme(
       headline6: TextStyle(

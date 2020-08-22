@@ -19,13 +19,7 @@ class CategoryFlex extends StatelessWidget {
     final _width = _isRow ? _screenWidth / children.length : _screenWidth;
     return Flex(
       direction: _isRow ? Axis.horizontal : Axis.vertical,
-      children: children
-          .map((c) => SizedBox(
-                child: c,
-                width: _width,
-                height: _width / ratio,
-              ))
-          .toList(),
+      children: children.map((c) => SizedBox(width: _width, height: _width / ratio, child: c)).toList(),
     );
   }
 }

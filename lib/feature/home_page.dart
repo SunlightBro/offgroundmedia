@@ -15,15 +15,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: Image.asset('assets/Icon-512.png'),
-        title: Text('Offground Media'),
+        title: const Text('Offground Media'),
       ),
       body: ListView(
         children: [
           CarouselSlider(
-            options: CarouselOptions(viewportFraction: 1.0, aspectRatio: 16 / 9, disableCenter: true, autoPlay: true),
-            items: imgList.map((i) => Container(child: Image.network(i, fit: BoxFit.cover))).toList(),
+            options: CarouselOptions(viewportFraction: 1.0, disableCenter: true, autoPlay: true),
+            items: imgList.map((i) => Image.network(i, fit: BoxFit.cover)).toList(),
           ),
-          Header(title: 'Photography'),
+          const Header(title: 'Photography'),
           CategoryFlex(
             children: [
               HoverImage(title: 'People', url: imgList[0]),
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
               HoverImage(title: 'Commercial', url: imgList[2]),
             ],
           ),
-          Header(title: 'Videography'),
+          const Header(title: 'Videography'),
           CategoryFlex(
             ratio: 16/9,
             minHeight: 360,
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
               Container(color: Colors.purple),
             ],
           ),
-          Header(title: 'About'),
+          const Header(title: 'About'),
         ],
       ),
     );
