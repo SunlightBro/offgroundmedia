@@ -36,8 +36,8 @@ class _HomePageState extends State<HomePage> {
             ratio: 16 / 9,
             minHeight: 360,
             children: [
-              Container(color: Colors.yellow),
-              Container(color: Colors.purple),
+              Image.network(imgList[3], fit: BoxFit.cover),
+              Image.network(imgList[4], fit: BoxFit.cover),
             ],
           ),
           const Header(title: 'About'),
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-///dummy Data
+///Dummy Data
 final List<String> imgList = [
   'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1920&q=80',
   'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1920&q=80',

@@ -9,10 +9,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-  carousel_slider: ^2.2.1
   lint: ^1.2.0
+
+  carousel_slider: ^2.2.1
+
   shared_preferences: ^0.5.10
   shared_preferences_web: ^0.1.2+7
+
+  google_fonts: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +26,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - fonts/
     - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see

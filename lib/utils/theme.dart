@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-final offgroundTheme = ThemeData.light().copyWith(
-  appBarTheme: const AppBarTheme(
-    color: Colors.white,
+final offgroundLight = ThemeData(
+  appBarTheme: AppBarTheme(
+    color: Colors.white10,
+    elevation: 0.1,
     textTheme: TextTheme(
-      headline6: TextStyle(
-        color: Colors.black87,
-        fontSize: 32.0,
-      ),
+      headline6: GoogleFonts.bebasNeue(fontSize: 36, fontWeight: FontWeight.w400, color: Colors.black87),
     ),
   ),
   textTheme: TextTheme(
