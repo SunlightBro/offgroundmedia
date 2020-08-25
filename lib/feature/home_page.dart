@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
           ),
           const Header(title: 'Videography'),
           CategoryFlex(
-            ratio: 16/9,
+            ratio: 16 / 9,
             minHeight: 360,
             children: [
               Container(color: Colors.yellow),

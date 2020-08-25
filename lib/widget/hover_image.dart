@@ -23,11 +23,18 @@ class _HoverImageState extends State<HoverImage> {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.network(widget.url, fit: BoxFit.cover,),
+          Image.network(
+            widget.url,
+            fit: BoxFit.cover,
+          ),
           AnimatedOpacity(
             opacity: _hovering ? 1 : 0,
             duration: const Duration(milliseconds: 300),
-            child: Center(child: Text(widget.title, style: Theme.of(context).textTheme.headline3,)),
+            child: Center(
+                child: Text(
+              widget.title,
+              style: Theme.of(context).textTheme.headline3,
+            )),
           )
         ],
       ),

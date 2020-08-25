@@ -7,12 +7,9 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.0,
+      height: 160.0,
       alignment: Alignment.center,
-      child: Text(
-        title.toUpperCase(),
-        style: Theme.of(context).textTheme.headline3,
-      ),
+      child: Text(title.toUpperCase(), style: Theme.of(context).textTheme.headline3),
     );
   }
 }
